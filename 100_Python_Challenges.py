@@ -7,6 +7,19 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+
+# 18. randomly choose any number from 100 to 300, inclusive
+# and calculate the sum of the digits in the number
+# return n, total
+def sum_digits():
+    num = random.randint(100, 300)
+    str_num = str(num)
+    total = 0
+    for x in range(0, len(str_num)):
+        total += int(str_num[x])
+    print(num, total)
+    return num, total
+
 # 17. accept a non-negative integer and returns True if it is a prime number
 # returns False if it's not a prime number
 def prime_num (num):
