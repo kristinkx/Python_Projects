@@ -7,6 +7,19 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+
+# 15. randomly choose any number from 1 to 10, incluvsive
+# then calculate the factorial of the number. return (num, factorial)
+
+def factorial():
+    num = random.randint(1,10)
+    result = 1
+    for x in range(1, num + 1):
+        # print (x)
+        result *= x
+    # print(num, result)
+    return num, result
+
 # 14. accepts three bool variables, x, y and z. return True if at least 2
 # of three variables are True. return (x, y, z, True/False)
 # note to myself: should be able to simplify the code
