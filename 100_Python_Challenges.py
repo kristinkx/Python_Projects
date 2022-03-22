@@ -8,6 +8,15 @@ import datetime
 ### update on daily basis until the challenges are completed ###
 
 
+# 16. check if a function returns a whole number w/ decimals after dividing
+def check_division(num):
+    if num - int(num) == 0:
+        # print('T')
+        return num, True
+    else:
+        # print('F')
+        return num, False
+
 # 15. randomly choose any number from 1 to 10, incluvsive
 # then calculate the factorial of the number. return (num, factorial)
 
