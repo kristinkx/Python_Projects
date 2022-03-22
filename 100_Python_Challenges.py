@@ -7,9 +7,17 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 22. reverse a string. accepts 2 strings. concatenate the 2 strings
+# by inserting a space in between the strings and then reverse the resultant string
+# return new_string
+def string_reverse(first_name, last_name):
+
+    result = (first_name + ' ' + last_name)[::-1]
+    print(result)
+    return result
+
 # 21. Fibonacci: randomly choose any number, n, from 5 t0 10 inclusive and
 # generates a Fibonacci sequence until n. return in form of a list, return (n, output-sequence)
-
 def Fibonacci():
     output_sequence = list()
     f = 0  # the first int
@@ -29,7 +37,6 @@ def Fibonacci():
 
 # 20. accepts an int and converts it into binary form. then swap the twp bits at
 # position 3 and 7 from left in the binary number and return the int result
-# correct
 def swap_bits(num):
     bin_num = f'{num:08b}'
     s3 = bin_num[2]
