@@ -7,6 +7,19 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 17. accept a non-negative integer and returns True if it is a prime number
+# returns False if it's not a prime number
+def prime_num (num):
+    result = []
+    for x in range(1, num + 1):
+        if num % x == 0:
+            result.append(x)
+    if sum(result) - 1 - num == 0:
+        # print('True')
+        return True
+    else:
+        # print('False')
+        return False
 
 # 16. check if a function returns a whole number w/ decimals after dividing
 def check_division(num):
