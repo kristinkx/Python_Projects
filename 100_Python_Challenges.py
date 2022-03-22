@@ -7,6 +7,15 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 27. reverse words in a string: accepts a string and reverse every word of the string, return the reversed string,
+# if the string contains any leading or trailing spaces between two words, remove the extra spaces. 
+# The output string should have a single space separating the words
+def reverse_string(input_string):
+    # output_string = input_string.replace(' ', '')
+    output_string = input_string.strip()
+    print(' '.join(reversed(output_string.split())))
+    return ' '.join(reversed(output_string.split()))
+
 # 26. remove consecutive duplicate characters in a string
 def remove_duplicates (input_string):
     input_lst = list(input_string)
