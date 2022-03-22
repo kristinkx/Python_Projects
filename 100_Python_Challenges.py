@@ -7,6 +7,26 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 14. accepts three bool variables, x, y and z. return True if at least 2
+# of three variables are True. return (x, y, z, True/False)
+# note to myself: should be able to simplify the code
+def booleans(x, y, z):
+    if x == y == z == True:
+        return True
+    elif x == y == True and z == False:
+        return True
+    elif x == z == True and y == False:
+        return True
+    elif x == False and x == y == True:
+        return True
+    elif x == y == False and z == False:
+        return False
+    elif y == z == False and x == True:
+        return False
+    elif z == x == False and y == True:
+        return False
+    elif x == y == z == False:
+        return False
 
 # 13. choose a random number from 1 and 5000, inclusive
 # calculate the length of the number (do not use len() function)
