@@ -1,7 +1,26 @@
 # Udemy course: 100 Python Challenges 
 # https://www.udemy.com/course/100-python-challenges/learn/lecture/25954126?start=0#overview
+from random import randrange
+from random import randint
+import math
+import datetime
 
-# update on daily basis until the challenges are completed
+### update on daily basis until the challenges are completed ###
+
+
+# 13. choose a random number from 1 and 5000, inclusive
+# calculate the length of the number (do not use len() function)
+# return (n, count)
+def calculate_length():
+    # num = randrange(5000)  # works
+    num = random.randint(1, 5000)   # also works
+    str_num = str(num)
+    count = 0
+    for x in (str_num):
+        count += 1
+
+    # print(num, count)
+    return (num, count)
 
 # 12. return the next number greate than the 2 numbers a and b, and divisible by b
 def check_division(a, b):
