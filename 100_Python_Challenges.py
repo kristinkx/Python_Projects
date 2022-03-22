@@ -7,6 +7,20 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 20. accepts an int and converts it into binary form. then swap the twp bits at
+# position 3 and 7 from left in the binary number and return the int result
+# correct
+def swap_bits(num):
+    bin_num = f'{num:08b}'
+    s3 = bin_num[2]
+    s7 = bin_num[6]
+    # print(bin_num[0:3])
+    # 00101000 to 00001010
+    bin_result = bin_num[0:2] + s7 + bin_num[3:6] + s3 + bin_num[-1]
+    # print (bin_result)
+    int_result = int(bin_result, 2)
+    # print(int_result)
+    return int_result
 
 # 19. generate a list containing 10 random numbers between 0 and 100, inclusive
 # then return a list of numbers divisible by 15; return input_list, output_list
