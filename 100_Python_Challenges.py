@@ -8,6 +8,17 @@ import datetime
 ### update on daily basis until the challenges are completed ###
 
 
+# 19. generate a list containing 10 random numbers between 0 and 100, inclusive
+# then return a list of numbers divisible by 15; return input_list, output_list
+def divide_by_15():
+    input_list = [random.randrange(0, 100) for i in range(10)]
+    output_list = []
+    for x in input_list:
+        if x % 15 == 0:
+            output_list.append(x)
+    # print(input_list, output_list)
+    return input_list, output_list
+
 # 18. randomly choose any number from 100 to 300, inclusive
 # and calculate the sum of the digits in the number
 # return n, total
@@ -151,7 +162,6 @@ def fizzbuzz (num):
 
 # 7. return the decimal part of a number
 # if decimal part is zero, then return the string 'INTEGER'
-
 def decimal_part (num):
     expected_out = 0
     if (num * 10) % 10 == 0:
@@ -164,13 +174,11 @@ def decimal_part (num):
         # return round(num - int(num), 2)
         
 # 6. find power of any number x ^ y
-
 def power (x, y):
     # print (x ** y)
     return x ** y
   
 # 5. determine factors of a number; return the output in the form of a list
-
 def factors(num):
     output_list = []
     for x in range(1, num + 1):
@@ -188,7 +196,6 @@ def even_odd(num):
       
 # 3. divide num1 by num2 and return the quotient and remainder.
 # output rounded to 2 decimal places
-
 def quot_rem(num1, num2):
     
     if num1 != 0 and num2 != 0:
@@ -199,7 +206,6 @@ def quot_rem(num1, num2):
     return q, r
   
 # 2. return a square root of an input number, rounded to 3 decimal places
-
 def sqrt (num):
     if num <=0:
         return 0
@@ -209,7 +215,6 @@ def sqrt (num):
   
 # 1. calculate the sum of 3 given numbers
 # if the values are equal then return 2 times of their sum
-
 import math
 def sum_num (a,b,c):
     if a == b == c:
