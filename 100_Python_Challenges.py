@@ -7,6 +7,22 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 26. remove consecutive duplicate characters in a string
+def remove_duplicates (input_string):
+    input_lst = list(input_string)
+    output_string = ''
+    x = 0
+    while x < len(input_lst) - 1:
+        if input_lst[x] == input_lst[x + 1]:
+            del input_lst[x]
+        else:
+            x = x + 1
+    for y in input_lst:
+        output_string = output_string + y
+
+    # print(output_string)
+    return output_string
+
 # 25. remove duplicate elements from a string
 # example: inout_string = 'How are you?', expected_out = How areyu?
 def remove_duplicates (input_string):
