@@ -7,6 +7,15 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 24, count the number of vowels in a given string
+def count_vowels (input_string):
+    v = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+    count = 0
+    for x in input_string:
+        if x in v:
+            count += 1
+    print(count)
+    return count
 
 # 23. swap two variables without using a third variable
 
