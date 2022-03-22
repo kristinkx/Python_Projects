@@ -7,6 +7,26 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 21. Fibonacci: randomly choose any number, n, from 5 t0 10 inclusive and
+# generates a Fibonacci sequence until n. return in form of a list, return (n, output-sequence)
+
+def Fibonacci():
+    output_sequence = list()
+    f = 0  # the first int
+    s = 1  # the second int
+    x = 0  # for looping
+    result = 0
+    n = random.randint(5, 10)
+    while x < n:
+        output_sequence.append(f)
+        result = f + s
+        f = s
+        s = result
+        x += 1
+
+    print(n, output_sequence)
+    return n, output_sequence
+
 # 20. accepts an int and converts it into binary form. then swap the twp bits at
 # position 3 and 7 from left in the binary number and return the int result
 # correct
