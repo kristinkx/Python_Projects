@@ -7,7 +7,17 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
-# 24, count the number of vowels in a given string
+# 25. remove duplicate elements from a string
+# example: inout_string = 'How are you?', expected_out = How areyu?
+def remove_duplicates (input_string):
+    output_string = ''
+    for x in input_string:
+        if x not in output_string:
+            output_string = output_string + x
+    print(output_string)
+    return output_string
+
+# 24. count the number of vowels in a given string
 def count_vowels (input_string):
     v = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
     count = 0
