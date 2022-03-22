@@ -7,6 +7,19 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 28. longest common prefix
+def longest_prefix(s1, s2, s3, s4):
+    lst = [s1,s2,s3,s4]
+    lst.sort()
+
+    ending = min(len(lst[0]), len(lst[3]))
+    x = 0
+    while (x < ending and lst[0][x] == lst[3][x]):
+        x += 1
+    output_string = lst[0][0:x]
+    # print(output_string)
+    return output_string
+
 # 27. reverse words in a string: accepts a string and reverse every word of the string, return the reversed string,
 # if the string contains any leading or trailing spaces between two words, remove the extra spaces. 
 # The output string should have a single space separating the words
