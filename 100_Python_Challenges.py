@@ -7,6 +7,19 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+
+# 23. swap two variables without using a third variable
+
+def swap_strings(s1, s2):
+    len1 = len(s1)
+    len2 = len(s2)
+    s1 = s1 + s2
+    s2 = s1
+    s1 = s1.replace(s1[0:len1], '')
+    s2 = s2.replace(s2[len2::], '')
+    print(s1, s2)
+    return s1, s2
+
 # 22. reverse a string. accepts 2 strings. concatenate the 2 strings
 # by inserting a space in between the strings and then reverse the resultant string
 # return new_string
