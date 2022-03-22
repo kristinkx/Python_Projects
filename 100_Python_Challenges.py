@@ -3,7 +3,15 @@
 
 # update on daily basis until the challenges are completed
 
-
+# 12. return the next number greate than the 2 numbers a and b, and divisible by b
+def check_division(a, b):
+    if a % b == 0:
+        # print(a + b)
+        return a + b
+    else:
+        # print((a + b) - (a % b))
+        return (a + b) - (a % b)
+    
 # 11. write a function accepts two inputs, yr (year) and mon (month) and
 # return True if this yr/mon has Friday 13th, False otherwise
 # note: return type: return date(yr, mon, day), T/F
