@@ -3,6 +3,17 @@
 
 # update on daily basis until the challenges are completed
 
+
+# 11. write a function accepts two inputs, yr (year) and mon (month) and
+# return True if this yr/mon has Friday 13th, False otherwise
+# note: return type: return date(yr, mon, day), T/F
+def check_friday(yr, mon):
+    friday = datetime(yr, mon, 13)
+    if friday.strftime("%A") == "Friday":
+        return datetime(yr, mon, 13), True
+    else:
+        return datetime(yr, mon, 13), False
+    
 # 10. check if a number is equal to the num of its positive divisors, except itself
 def sum_pos_divisor(num):
     dividers = []
