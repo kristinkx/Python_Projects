@@ -50,6 +50,21 @@ def replace_value(input_list):
     # print(input_list)
     return input_list
 
+# 43. get a string made of the first 2 and the last 2 chars from a given string
+# if the length of the given string < 2, return empty string
+def str_first2_last2_char(input_string):
+    result = ''
+    if len(input_string) < 2:
+        return result
+    elif len(input_string) > 2:
+        result = input_string[0:2] + input_string[-2::]
+    print(result)
+    return result
+
+# 42. return a string that consists of n copies of the input string
+def string_copies (input_string):
+    return len(input_string) * input_string
+
 # 39. check if the given string is a valid pin or not
 # a valid pin has 1) exactly 5 characters; 2) accepts only numerical chars (0-9)
 # 3) no whitespaces
