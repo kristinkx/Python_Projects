@@ -50,6 +50,12 @@ def replace_value(input_list):
     # print(input_list)
     return input_list
 
+# 32. convert a string with decimals to an integer
+def str_to_int(input_string):
+    num = int( float(input_string))
+    # print(num)
+    return num
+
 # 31. remove white spaces from a string
 def remove_spaces(input_string):
     result = ''.join([x for x in input_string.split()])
