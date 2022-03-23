@@ -17,7 +17,7 @@ import webbrowser
 def calculate_BMI():
 	bmi = 0
 	# embed link to convert weight
-	print('Clik here to convert pound to kg:',
+	print('Check here to convert pound to kg:',
 		  (webbrowser.open("https://www.unitconverters.net/weight-and-mass/lbs-to-kg.htm", new = 1, autoraise = True)))
 	weight = float(input('Please enter your weight in kg: '))
 	# exit program gracefully
@@ -31,7 +31,7 @@ def calculate_BMI():
 	else:
 		# pass
 		# embed link to convert weight
-		print('Clik here to convert ft to cm:',
+		print('Check here to convert ft to cm:',
 			  (webbrowser.open("https://www.rapidtables.com/convert/length/feet-to-cm.html", new = 1, autoraise = True)))
 		height = float(input('Please enter your height in cm: '))
 		# exit program gracefully
@@ -68,3 +68,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
