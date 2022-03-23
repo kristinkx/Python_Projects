@@ -50,6 +50,12 @@ def replace_value(input_list):
     # print(input_list)
     return input_list
 
+# 31. remove white spaces from a string
+def remove_spaces(input_string):
+    result = ''.join([x for x in input_string.split()])
+    # print(result)
+    return result
+
 # 30. String to Boolean conversion: converts a string to Boolean value. If the input string contains
 # the value 'true' (if required convert the case) then the Boolean value after conversion should
 # be True. If the string contains any other value other than 'true' or 'false' then the converted
