@@ -65,6 +65,17 @@ def str_first2_last2_char(input_string):
 def string_copies (input_string):
     return len(input_string) * input_string
 
+# 41. pig latin: convert the given string into Pig Latin: transfer the initial consonant or
+# consonant cluster of each word to the end of the word and adding a vocalic syllable ('ay)
+# to create a suffix
+def pig_latin (input_string):
+    split = input_string.split()
+    results = []
+    for x in split:
+        x = x[3:] + x[:3] + 'ay'
+        results.append(x)
+    print(' '.join(results))
+    return ' '.join(results)
 
 # 40. number the occurrences of a sub-string ina given string. finds the number of
 # times a sub-string occurs in a given string and also the position at which
