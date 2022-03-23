@@ -50,15 +50,26 @@ def replace_value(input_list):
     # print(input_list)
     return input_list
 
+# 37. check if a string is a pangram or not
+def pangram(sample_string):
+    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'
+                'q', 's', 't', 'u', 'v', 'x', 'y', 'z']
+    for x in alphabet:
+        if x not in sample_string.lower():
+            print ('False')
+            return False
+        else:
+            print('True')
+            return True
+        
 # 36. separate the digits of an integer, return the digits in the form of a list
-# correct
 def separate_digits (num):
     results = []
     str_num = str(num)
-    print(str_num)
+    # print(str_num)
     for x in str_num:
         results.append(int(x))
-    print(results)
+    # print(results)
     return results
 
 # 35. convert string to hexadecimal numbers. output removes the prefix 0x
