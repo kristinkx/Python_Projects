@@ -50,6 +50,15 @@ def replace_value(input_list):
     # print(input_list)
     return input_list
 
+# 34. calculate the number of upper case letters in a string
+def count_case (sample_string):
+    count = 0
+    for x in sample_string:
+        if x.isupper():
+            count += 1
+    # print(count)
+    return count
+
 # 33. return n copies of a given string
 def copies_of_string(input_string, num):
     # print(input_string * num)
