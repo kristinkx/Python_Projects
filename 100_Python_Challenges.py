@@ -50,6 +50,28 @@ def replace_value(input_list):
     # print(input_list)
     return input_list
 
+# 39. check if the given string is a valid pin or not
+# a valid pin has 1) exactly 5 characters; 2) accepts only numerical chars (0-9)
+# 3) no whitespaces
+def valid_pin(input_string):
+    num = '0123456789'
+    if len(input_string) != 5:
+        # print('length False')
+        return False
+    elif len(input_string) == 5:
+        for x in input_string:
+            # print(type(x))
+            if x not in num:
+                # print('digit False')
+                return False
+
+        if ' ' in input_string:
+            # print('space False')
+            return False
+        else:
+            # print('True')
+            return True
+        
 # 38. remove all occurrence of a given character from an inout string
 def remove_char (input_string, char):
     result = ''
