@@ -7,6 +7,12 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 48. remove all occurrences of an element from a list (remove the num 20)
+def remove_20(input_list):
+    result = [x for x in (input_list) if x != 20]
+    # print(result)
+    return result
+
 # 47. return indices of all occurrences of an element in a list
 # return the output in the form of a list
 def indices (input_list, element):
