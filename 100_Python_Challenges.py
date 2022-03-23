@@ -50,6 +50,15 @@ def replace_value(input_list):
     # print(input_list)
     return input_list
 
+# 38. remove all occurrence of a given character from an inout string
+def remove_char (input_string, char):
+    result = ''
+    for x in input_string:
+        if x != char:
+            result += x
+    # print(result)
+    return result
+
 # 37. check if a string is a pangram or not
 def pangram(sample_string):
     alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'
