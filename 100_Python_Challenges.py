@@ -7,6 +7,16 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 44. replace elements in a list, finds the value 'd' in the given list and
+# replace 'd' with 'c'
+def replace_value(input_list):
+    for x in range(len(input_list)):
+        if input_list[x] == 'd':
+            input_list[x] = 'c'
+
+    # print(input_list)
+    return input_list
+
 # 28. longest common prefix
 def longest_prefix(s1, s2, s3, s4):
     lst = [s1,s2,s3,s4]
@@ -52,7 +62,7 @@ def remove_duplicates (input_string):
     for x in input_string:
         if x not in output_string:
             output_string = output_string + x
-    print(output_string)
+    # print(output_string)
     return output_string
 
 # 24. count the number of vowels in a given string
@@ -62,7 +72,7 @@ def count_vowels (input_string):
     for x in input_string:
         if x in v:
             count += 1
-    print(count)
+    # print(count)
     return count
 
 # 23. swap two variables without using a third variable
@@ -74,7 +84,7 @@ def swap_strings(s1, s2):
     s2 = s1
     s1 = s1.replace(s1[0:len1], '')
     s2 = s2.replace(s2[len2::], '')
-    print(s1, s2)
+    # print(s1, s2)
     return s1, s2
 
 # 22. reverse a string. accepts 2 strings. concatenate the 2 strings
@@ -83,7 +93,7 @@ def swap_strings(s1, s2):
 def string_reverse(first_name, last_name):
 
     result = (first_name + ' ' + last_name)[::-1]
-    print(result)
+    # print(result)
     return result
 
 # 21. Fibonacci: randomly choose any number, n, from 5 t0 10 inclusive and
@@ -102,7 +112,7 @@ def Fibonacci():
         s = result
         x += 1
 
-    print(n, output_sequence)
+   # print(n, output_sequence)
     return n, output_sequence
 
 # 20. accepts an int and converts it into binary form. then swap the twp bits at
@@ -139,7 +149,7 @@ def sum_digits():
     total = 0
     for x in range(0, len(str_num)):
         total += int(str_num[x])
-    print(num, total)
+    # print(num, total)
     return num, total
 
 # 17. accept a non-negative integer and returns True if it is a prime number
@@ -259,16 +269,16 @@ def count_count_digits(input_string):
 # if a number of not a multiple of either 3 or 5, return the num itself
 def fizzbuzz (num):
     if num % 3 == 0 and num % 5 !=0:
-        print('Fizz')
+        # print('Fizz')
         return ('Fizz')
     elif num % 3  == 0 and num % 5 == 0:
-        print ('FizzBuzz')
+        # print ('FizzBuzz')
         return ('FizzBuzz')
     elif num % 3 !=0 and num % 5 == 0:
-        print('Buzz')
+        # print('Buzz')
         return ('Buzz')
     elif num % 3 != 0 and num % 5 != 0:
-        print (num)
+        # print (num)
         return num
 
 # 7. return the decimal part of a number
@@ -280,7 +290,7 @@ def decimal_part (num):
         return ('INTEGER')
     else:
         expected_out = round(num - int(num), 2)
-        print(expected_out)
+        # print(expected_out)
         return expected_out
         # return round(num - int(num), 2)
         
@@ -329,8 +339,8 @@ def sqrt (num):
 import math
 def sum_num (a,b,c):
     if a == b == c:
-        print(2 * (a + b + c))
+        # print(2 * (a + b + c))
         return 2 * (a + b + c)
     else:
-        print(a + b + c)
+        # print(a + b + c)
         return a + b + c
