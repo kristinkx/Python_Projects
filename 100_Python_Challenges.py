@@ -65,6 +65,23 @@ def str_first2_last2_char(input_string):
 def string_copies (input_string):
     return len(input_string) * input_string
 
+
+# 40. number the occurrences of a sub-string ina given string. finds the number of
+# times a sub-string occurs in a given string and also the position at which
+# th sub-string is found. return (num, position)
+def find_substring(main_string, sub_string):
+    num = main_string.count(sub_string)
+    i = 0
+    result = []
+    while i < len(main_string):
+        i = main_string.find(sub_string, i)
+        result.append(i)
+        if i == -1:
+            break
+        i += len(sub_string)
+    # print(num, result)
+    return num, result
+
 # 39. check if the given string is a valid pin or not
 # a valid pin has 1) exactly 5 characters; 2) accepts only numerical chars (0-9)
 # 3) no whitespaces
