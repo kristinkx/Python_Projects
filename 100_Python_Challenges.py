@@ -7,6 +7,15 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 47. return indices of all occurrences of an element in a list
+# return the output in the form of a list
+def indices (input_list, element):
+    # index() only returns the first occurrence of the matching element
+    # use list comprehension and enumerate()
+    results = [i for i, x in enumerate(input_list) if x == element]
+    # print(results)
+    return results
+
 # 46. return the kth-largest element in a list
 def kth_largest_element (input_list, k):
     input_list.sort(reverse = True)
