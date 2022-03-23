@@ -7,6 +7,15 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 45. remove zeros from a list
+def remove_zero(input_list):
+    new = []
+    for x in input_list:
+        if x != 0:
+            new.append(x)
+    # print(new)
+    return new
+
 # 44. replace elements in a list, finds the value 'd' in the given list and
 # replace 'd' with 'c'
 def replace_value(input_list):
