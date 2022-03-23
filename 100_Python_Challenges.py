@@ -50,6 +50,17 @@ def replace_value(input_list):
     # print(input_list)
     return input_list
 
+# 36. separate the digits of an integer, return the digits in the form of a list
+# correct
+def separate_digits (num):
+    results = []
+    str_num = str(num)
+    print(str_num)
+    for x in str_num:
+        results.append(int(x))
+    print(results)
+    return results
+
 # 35. convert string to hexadecimal numbers. output removes the prefix 0x
 def convert_to_hex (input_string):
     # int_hex = int(input_string, 16)
