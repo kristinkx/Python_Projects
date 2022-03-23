@@ -7,6 +7,15 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 46. return the kth-largest element in a list
+def kth_largest_element (input_list, k):
+    input_list.sort(reverse = True)
+    # print(input_list)
+    for x in range(0, len(input_list)):
+        if x == k:
+            # print(input_list[k - 1])
+            return input_list[k - 1]
+        
 # 45. remove zeros from a list
 def remove_zero(input_list):
     new = []
