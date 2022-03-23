@@ -50,6 +50,16 @@ def replace_value(input_list):
     # print(input_list)
     return input_list
 
+# 35. convert string to hexadecimal numbers. output removes the prefix 0x
+def convert_to_hex (input_string):
+    # int_hex = int(input_string, 16)
+    s = input_string.encode('utf-8')
+    # print (s)
+    result = s.hex()
+    result = " ".join(result[i:i + 2] for i in range(0, len(result), 2))
+    # print(result)
+    return result
+
 # 34. calculate the number of upper case letters in a string
 def count_case (sample_string):
     count = 0
