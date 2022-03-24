@@ -6,6 +6,14 @@ import math
 import datetime
 
 ### update on daily basis until the challenges are completed ###
+# 51. returns the highest possible product by multiplying 3 numbers from the given list
+def highest_prod(input_list):
+    input_list.sort(reverse = True)
+    # print(input_list)
+    prod = input_list[0] * input_list[1] * input_list[2]
+
+    # print (prod)
+    return prod
 
 # 48. remove all occurrences of an element from a list (remove the num 20)
 def remove_20(input_list):
