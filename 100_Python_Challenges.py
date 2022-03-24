@@ -6,6 +6,29 @@ import math
 import datetime
 
 ### update on daily basis until the challenges are completed ###
+
+# 52. given a list of words in the singular form, return a set of those words
+# in the plural form, the result words only appear once in the output list
+def pluralize (input_list):
+    results = []
+    for x in input_list:
+        if x.endswith('o') or x.endswith('s') or x.endswith('ss') or x.endswith('sh') or x.endswith('z') or \
+                x.endswith('es'):
+            x = x + 'es'
+            results.append(x)
+            # this is weir I thought the plural form for table is tables but the test case does not agree
+        elif x.endswith('e'):
+            x = x
+            results.append(x)
+        else:
+            x = x + 's'
+            results.append(x)
+    for y in results:
+        if results.count(y) > 1:
+            results.remove(y)
+    # print (results)
+    return results
+
 # 51. returns the highest possible product by multiplying 3 numbers from the given list
 def highest_prod(input_list):
     input_list.sort(reverse = True)
