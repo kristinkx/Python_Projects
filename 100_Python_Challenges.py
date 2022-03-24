@@ -24,6 +24,13 @@ def return_index(input_list, target):
                 # print(input_list.index(x))
                 return input_list.index(x)
 
+# 53. used sorted() function and lambda to sort the words in the list based on their
+# second letter from a to z       
+def word_sort(input_list):
+    result = sorted(input_list, key=lambda x: (x[1:]))
+    # print(result)
+    return result
+
 # 52. given a list of words in the singular form, return a set of those words
 # in the plural form, the result words only appear once in the output list
 def pluralize (input_list):
