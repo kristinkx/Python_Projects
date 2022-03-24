@@ -7,6 +7,23 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 54. return the index of a target value in a list. if the target value is found in the
+# list then return the index of the value, if not, return the index where it would be
+# if it were inserted in order.
+def return_index(input_list, target):
+    if target not in input_list:
+        input_list.insert(len(input_list)-1,target)
+        input_list.sort(reverse=False)
+        # print(input_list)
+        position = input_list.index(target)
+        # print(position)
+        return position
+    else:
+        for x in input_list:
+            if x == target:
+                # print(input_list.index(x))
+                return input_list.index(x)
+
 # 52. given a list of words in the singular form, return a set of those words
 # in the plural form, the result words only appear once in the output list
 def pluralize (input_list):
