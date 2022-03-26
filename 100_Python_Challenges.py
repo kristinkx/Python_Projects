@@ -7,6 +7,12 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 55. highest number in a list: returns the highest number in a list
+def high_num (input_list):
+    input_list.sort(reverse = True)
+    print(input_list[0])
+    return input_list[0]
+
 # 54. return the index of a target value in a list. if the target value is found in the
 # list then return the index of the value, if not, return the index where it would be
 # if it were inserted in order.
