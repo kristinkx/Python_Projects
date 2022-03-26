@@ -7,6 +7,19 @@ import datetime
 
 ### update on daily basis until the challenges are completed ###
 
+# 56. Multiple all elements in a list:
+def multiple_elements(input_list):
+    prod = 1
+    if len(input_list) == 0:
+        return 0
+    elif len(input_list) == 1:
+        return input_list[0]
+    elif len(input_list) > 1:
+        for x in input_list:
+            prod *= x
+    # print(prod)
+    return prod
+
 # 55. highest number in a list: returns the highest number in a list
 def high_num (input_list):
     input_list.sort(reverse = True)
