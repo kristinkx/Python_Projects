@@ -6,6 +6,16 @@ import math
 import datetime
 
 ### update on regular basis until the challenges are completed ###
+# 88. calculate six months from a given date
+def add_to_date(date):
+    month = date.month + 6
+    year_add = month // 12
+    if year_add == 1:
+        new_month = month % 12
+    else:
+        new_month = month
+    six_month = datetime.date(date.year + year_add, new_month, date.day +1)
+    return six_month
 
 # 87. convert year, month, date to day of the year
 def day_of_year():
