@@ -7,6 +7,12 @@ import datetime
 
 ### update on regular basis until the challenges are completed ###
 
+# 87. convert year, month, date to day of the year
+def day_of_year():
+    chosen_date = datetime.date(8004,3,23)
+    day_of_the_year = chosen_date.strftime('%j')
+    return chosen_date, day_of_the_year
+
 # 86: check if the given date if valid
 def check_date(year, month, date): 
     flag = True
