@@ -5,7 +5,18 @@ from random import randint
 import math
 import datetime
 
-### update on daily basis until the challenges are completed ###
+### update on regular basis until the challenges are completed ###
+
+# 86: check if the given date if valid
+def check_date(year, month, date): 
+    flag = True
+    try:
+        datetime.datetime (int(year), int(month), int(date))
+    except ValueError:
+        flag = False
+    #print(flag)
+
+    return flag
 
 # 56. Multiple all elements in a list:
 def multiple_elements(input_list):
