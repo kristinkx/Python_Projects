@@ -35,13 +35,14 @@ def check_date(year, month, date):
 
     return flag
 
-# 67. max value in a dictionary
-def max_value(input_dict):
-    return max(input_dict.items(), key = operator.itemgetter(1))[1]
-
-# 68. sum all the values in a dictionary and return the total value
-def sum_values (input_dict):
-    return sum(input_dict.values())
+# 70. remove duplicate values in a dictionary
+def remove_duplicates(input_dict):
+    results = []
+    for key, value in input_dict.items():
+        if value not in results:
+            results.append(value)
+#     print(results)
+    return results
 
 # 69. multiply the vales in a dictionary
 def multiply_values (input_dict):
@@ -50,6 +51,14 @@ def multiply_values (input_dict):
         total = total * input_dict[v]
 #     print (total)
     return total
+
+# 68. sum all the values in a dictionary and return the total value
+def sum_values (input_dict):
+    return sum(input_dict.values())
+
+# 67. max value in a dictionary
+def max_value(input_dict):
+    return max(input_dict.items(), key = operator.itemgetter(1))[1]
 
 # 56. Multiple all elements in a list:
 def multiple_elements(input_list):
