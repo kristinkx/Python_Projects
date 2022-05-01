@@ -37,9 +37,9 @@ def check_date(year, month, date):
 
 # 73. remove empty items from a dictionary
 def remove_empty(input_dict):
-    results = {k: v for (k, v) in input_dict.items() if v is not None}
+    results = {k: v for (k, v) in input_dict.items() if v}
 
-#     print (results)
+    print (results)
     return results
 
 # 72: create a dictionary from 1 - 10 and return y: x * x
@@ -50,7 +50,6 @@ def create_dict():
 
 #     print(results)
     return results
-
 
 # 71. invert the keys and values of a dictionary
 def invert_dict(input_dict):
