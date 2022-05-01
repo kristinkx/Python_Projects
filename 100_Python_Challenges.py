@@ -35,6 +35,15 @@ def check_date(year, month, date):
 
     return flag
 
+# 71. invert the keys and values of a dictionary
+def invert_dict(input_dict):
+    results = {}
+    for key, value in input_dict.items():
+        results[value] = key
+        # results[value] = key
+#     print(results)
+    return results
+
 # 70. remove duplicate values in a dictionary
 def remove_duplicates(input_dict):
     results = []
