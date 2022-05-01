@@ -35,6 +35,16 @@ def check_date(year, month, date):
 
     return flag
 
+# 72: create a dictionary from 1 - 10 and return y: x * x
+def create_dict():
+    results = {}
+    for x in range(1, 11):
+        results[x] = x * x
+
+#     print(results)
+    return results
+
+
 # 71. invert the keys and values of a dictionary
 def invert_dict(input_dict):
     results = {}
