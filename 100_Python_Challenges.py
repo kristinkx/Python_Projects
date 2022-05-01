@@ -43,6 +43,14 @@ def max_value(input_dict):
 def sum_values (input_dict):
     return sum(input_dict.values())
 
+# 69. multiply the vales in a dictionary
+def multiply_values (input_dict):
+    total = 1
+    for v in input_dict:
+        total = total * input_dict[v]
+#     print (total)
+    return total
+
 # 56. Multiple all elements in a list:
 def multiple_elements(input_list):
     prod = 1
