@@ -4,6 +4,7 @@ from random import randrange
 from random import randint
 import math
 import datetime
+import operator
 
 ### update on regular basis until the challenges are completed ###
 # 88. calculate six months from a given date
@@ -33,6 +34,11 @@ def check_date(year, month, date):
     #print(flag)
 
     return flag
+
+# 67. max value in a dictionary
+def max_value(input_dict):
+    return max(input_dict.items(), key = operator.itemgetter(1))[1]
+
 
 # 56. Multiple all elements in a list:
 def multiple_elements(input_list):
