@@ -39,6 +39,9 @@ def check_date(year, month, date):
 def max_value(input_dict):
     return max(input_dict.items(), key = operator.itemgetter(1))[1]
 
+# 68. sum all the values in a dictionary and return the total value
+def sum_values (input_dict):
+    return sum(input_dict.values())
 
 # 56. Multiple all elements in a list:
 def multiple_elements(input_list):
