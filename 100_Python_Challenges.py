@@ -35,6 +35,13 @@ def check_date(year, month, date):
 
     return flag
 
+# 73. remove empty items from a dictionary
+def remove_empty(input_dict):
+    results = {k: v for (k, v) in input_dict.items() if v is not None}
+
+#     print (results)
+    return results
+
 # 72: create a dictionary from 1 - 10 and return y: x * x
 def create_dict():
     results = {}
