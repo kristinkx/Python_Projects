@@ -35,6 +35,12 @@ def check_date(year, month, date):
 
     return flag
 
+# 78. find intersection of two sets
+def set_intersection(set1, set2):
+    results = set1.intersection(set2)
+#     print(results)
+    return results
+
 # 77. compare 2 sets and display all elements that in set 1 but not in set 2
 def compare_sets (set1, set2):
     results = set ()
@@ -54,7 +60,6 @@ def remove_duplicates (input_dict):
     return results
 
 # 74. map 2 lists into a dictionary
-# correct
 def map_lists(list1,list2):
     return (dict(zip(list1,list2)))
 
@@ -71,7 +76,7 @@ def remove_empty(input_dict):
     print (results)
     return results
 
-# 72: create a dictionary from 1 - 10 and return y: x * x
+# 72. create a dictionary from 1 - 10 and return y: x * x
 def create_dict():
     results = {}
     for x in range(1, 11):
