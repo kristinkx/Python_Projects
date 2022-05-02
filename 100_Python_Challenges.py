@@ -35,6 +35,12 @@ def check_date(year, month, date):
 
     return flag
 
+# 74. sort values in a dictionary
+def dict_sort(input_dict):
+    results = {k: v for k, v in sorted(input_dict.items(), key=lambda x: x[1])}
+    print(results)
+    return results
+
 # 73. remove empty items from a dictionary
 def remove_empty(input_dict):
     results = {k: v for (k, v) in input_dict.items() if v}
