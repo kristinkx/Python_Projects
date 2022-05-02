@@ -24,7 +24,7 @@ def day_of_year():
     day_of_the_year = chosen_date.strftime('%j')
     return chosen_date, day_of_the_year
 
-# 86: check if the given date if valid
+# 86. check if the given date if valid
 def check_date(year, month, date): 
     flag = True
     try:
@@ -35,6 +35,14 @@ def check_date(year, month, date):
 
     return flag
 
+# 77. compare 2 sets and display all elements that in set 1 but not in set 2
+def compare_sets (set1, set2):
+    results = set ()
+    results = set1.difference(set2)
+
+#     print(results)
+    return results
+
 # 76. remove duplicates from a dictionary
 def remove_duplicates (input_dict):
     results = {}
@@ -44,6 +52,11 @@ def remove_duplicates (input_dict):
 
 #     print(results)
     return results
+
+# 74. map 2 lists into a dictionary
+# correct
+def map_lists(list1,list2):
+    return (dict(zip(list1,list2)))
 
 # 75. sort values in a dictionary
 def dict_sort(input_dict):
