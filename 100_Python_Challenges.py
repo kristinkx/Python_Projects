@@ -35,6 +35,11 @@ def check_date(year, month, date):
 
     return flag
 
+# 79. find the difference between the 2 sets; elements are in set1 but not in set 2
+def set_diff(set1, set2):
+    results = set1.difference(set2)
+    return results
+
 # 78. find intersection of two sets
 def set_intersection(set1, set2):
     results = set1.intersection(set2)
