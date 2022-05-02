@@ -35,6 +35,11 @@ def check_date(year, month, date):
 
     return flag
 
+# 81. find symmetrical difference between th3 2 sets (in either set but not in intersection)
+def sym_diff (set1, set2):
+    results = set1.symmetric_difference(set2)
+    return results
+
 # 80. find union of 2 sets
 def set_union(set1,set2):
     # both work
