@@ -35,6 +35,13 @@ def check_date(year, month, date):
 
     return flag
 
+# 80. find union of 2 sets
+def set_union(set1,set2):
+    # both work
+    # result = set1.union(set2)
+    # return result
+    return (set1 | set2) 
+
 # 79. find the difference between the 2 sets; elements are in set1 but not in set 2
 def set_diff(set1, set2):
     results = set1.difference(set2)
