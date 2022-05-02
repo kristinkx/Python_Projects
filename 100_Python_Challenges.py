@@ -35,6 +35,16 @@ def check_date(year, month, date):
 
     return flag
 
+# 76. remove duplicates from a dictionary
+def remove_duplicates (input_dict):
+    results = {}
+    for key, value in input_dict.items():
+        if value not in results.values():
+            results[key] = value
+
+#     print(results)
+    return results
+
 # 74. sort values in a dictionary
 def dict_sort(input_dict):
     results = {k: v for k, v in sorted(input_dict.items(), key=lambda x: x[1])}
