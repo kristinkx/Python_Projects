@@ -141,6 +141,20 @@ def sum_values (input_dict):
 def max_value(input_dict):
     return max(input_dict.items(), key = operator.itemgetter(1))[1]
 
+# 57. convert list to a dictionary (use built-in ASCII function)
+# in the expected output: key is the char of input_list, value is the ASCII value of the key
+def to_dict (input_list):
+    l = list()
+    for x in input_list:
+        l.append(x)
+        y = ord(x)
+        l.append(y)
+
+    for k in l:
+        result = [{l[k]: l[k+1]} for k in range(0, len(l), 2)]
+#     print(result)
+    return result
+
 # 56. Multiple all elements in a list:
 def multiple_elements(input_list):
     prod = 1
