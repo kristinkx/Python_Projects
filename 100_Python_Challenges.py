@@ -35,7 +35,12 @@ def check_date(year, month, date):
 
     return flag
 
-# 81. find symmetrical difference between th3 2 sets (in either set but not in intersection)
+# 82. remove all elements are in set1 but not in set2
+def diff_update(set1, set2):
+    # print (set2 - set1)
+    return set2 - set1
+
+# 81. find symmetrical difference between the 2 sets (in either set but not in intersection)
 def sym_diff (set1, set2):
     results = set1.symmetric_difference(set2)
     return results
